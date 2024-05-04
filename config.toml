@@ -5,7 +5,7 @@ theme = 'my-dnd-adventures/themes/hugo-story'
 contentDir   = "content"
 dataDir      = "data"
 layoutDir    = "layouts"
-publishDir = "public"
+publishDir = "./public"
 staticDir = "static"
 [menu]
   [[menu.main]]
