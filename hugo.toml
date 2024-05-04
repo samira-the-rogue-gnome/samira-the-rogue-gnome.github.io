@@ -11,10 +11,11 @@ relativeURLs = "true"
 
 # Local
 baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures'
-publishDir = "public"
+publishDir = "../public"
 themesDir = "themes"
 theme = 'hugo-story'
 sectionpagesMenu = 'main'
+uglyurls = true
 
 # Remote
 #baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
