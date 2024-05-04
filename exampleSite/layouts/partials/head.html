@@ -9,7 +9,7 @@
 	{{ end }}
 	
 	<!-- CSS -->
-	{{ if .Site.IsServer }}
+	{{ if hugo.IsServer }}
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
 	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
 	{{ else }}
