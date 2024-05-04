@@ -16,5 +16,5 @@
 
 <!-- FontAwesome JS -->
 {{ range .Site.Params.asset.fontawesome_js -}}
-    <script type="text/javascript" src="{{ . | absURL }}"></script>
+    <script type="text/javascript" src="{{ . | relURL }}"></script>
 {{- end }}
