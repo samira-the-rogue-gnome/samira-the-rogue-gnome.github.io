@@ -11,7 +11,7 @@ canonifyURLs = "true"
 
 # Local
 baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures'
-publishDir = "samira-the-rogue-gnome.github.io/my-dnd-adventures/public"
+publishDir = "../public"
 themesDir = "themes"
 theme = 'hugo-story'
 sectionpagesMenu = 'main'

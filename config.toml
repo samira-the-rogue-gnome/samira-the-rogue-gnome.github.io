@@ -2,5 +2,13 @@ baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures'
 languageCode = 'en-us'
 title = 'My DnD Adventures'
 theme = 'my-dnd-adventures/themes/hugo-story'
-[params]
-    mainSections = ["posts"]
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir = "public"
+staticDir = "static"
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
