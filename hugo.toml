@@ -15,7 +15,20 @@ publishDir = "public"
 themesDir = "themes"
 theme = 'hugo-story'
 sectionpagesMenu = 'main'
-uglyurls = true
+uglyurls = 'true'
+
+[build]
+  duplicateResourceFiles = false
+  noJSConfigInAssets = false
+  useResourceCacheWhen = 'fallback'
+  [build.buildStats]
+    disableClasses = false
+    disableIDs = false
+    disableTags = false
+    enable = false
+  [[build.cacheBusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = '(css|styles|scss|sass)'
 
 # Remote
 #baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
