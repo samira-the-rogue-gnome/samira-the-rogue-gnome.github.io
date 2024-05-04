@@ -17,6 +17,10 @@ theme = 'hugo-story'
 sectionpagesMenu = 'main'
 uglyurls = 'true'
 
+[permalinks]
+    [permalinks.section]
+    posts = '/posts/'
+
 [build]
   duplicateResourceFiles = false
   noJSConfigInAssets = false
