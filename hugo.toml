@@ -7,7 +7,7 @@
 ## -----------------------------------------------
 
 relativeURLs = "true"
-#canonifyURLs = "true"
+canonifyURLs = "true"
 
 # Local
 baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures'
