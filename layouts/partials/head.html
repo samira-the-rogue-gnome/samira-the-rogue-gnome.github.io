@@ -1,5 +1,5 @@
 <head>
-	<title>{{ ".Site.Title" }}</title>
+	<title>{{ .Site.Title }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="">
@@ -9,15 +9,14 @@
 	{{ end }}
 	
 	<!-- CSS -->
-	<p>Something</p>
-	{{ if .Site.IsServer }}
+	{{ if hugo.IsServer }}
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
 	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
 	{{ else }}
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "enableSourceMap" false) }}
 	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
 	{{ end }}
-	{{ if .Site.IsServer }}
+	{{ if hugo.IsServer }}
 	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
 	<noscript><link rel="stylesheet" href="{{ ($noscript).RelPermalink }}" /></noscript>
 	{{ else }}
