@@ -12,7 +12,7 @@ canonifyURLs = "true"
 # Local
 baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures/'
 publishDir = "public"
-themesDir = "./themes"
+themesDir = "themes"
 theme = 'hugo-story'
 sectionpagesMenu = 'main'
 #uglyurls = 'true'
