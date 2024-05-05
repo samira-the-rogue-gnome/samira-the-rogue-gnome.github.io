@@ -1,4 +1,4 @@
-baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures'
+baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures/'
 languageCode = 'en-us'
 title = 'My DnD Adventures'
 theme = 'hugo-story'
