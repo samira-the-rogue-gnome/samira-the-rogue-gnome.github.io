@@ -10,7 +10,7 @@ relativeURLs = "true"
 canonifyURLs = "true"
 
 # Local
-baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures/my-dnd-adventures'
+baseURL = 'samira-the-rogue-gnome.github.io'
 publishDir = "public"
 themesDir = "themes"
 theme = 'hugo-story'
@@ -21,18 +21,18 @@ sectionpagesMenu = 'main'
     [permalinks.section]
     posts = '/posts/'
 
-[build]
-  duplicateResourceFiles = false
-  noJSConfigInAssets = false
-  useResourceCacheWhen = 'fallback'
-  [build.buildStats]
-    disableClasses = false
-    disableIDs = false
-    disableTags = false
-    enable = false
-  [[build.cacheBusters]]
-    source = '(postcss|tailwind)\.config\.js'
-    target = '(css|styles|scss|sass)'
+#[build]
+  #duplicateResourceFiles = false
+  #noJSConfigInAssets = false
+  #useResourceCacheWhen = 'fallback'
+  #[build.buildStats]
+   # disableClasses = false
+   # disableIDs = false
+   # disableTags = false
+   # enable = false
+  #[[build.cacheBusters]]
+    #source = '(postcss|tailwind)\.config\.js'
+    #target = '(css|styles|scss|sass)'
 
 # Remote
 #baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
