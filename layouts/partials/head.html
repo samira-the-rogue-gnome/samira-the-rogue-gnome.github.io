@@ -1,5 +1,5 @@
 <head>
-	<title>{{ .Site.Title }}</title>
+	<title>{{ ".Site.Title" }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="">
@@ -9,21 +9,21 @@
 	{{ end }}
 	
 	<!-- CSS -->
-
-	<!--{{ if .Site.IsServer }}-->
+	<p>Something</p>
+	{{ if .Site.IsServer }}
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
 	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
-	<!--{{ else }}
+	{{ else }}
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "enableSourceMap" false) }}
 	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
-	{{ end }}-->
-	<!--{{ if .Site.IsServer }}-->
+	{{ end }}
+	{{ if .Site.IsServer }}
 	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
 	<noscript><link rel="stylesheet" href="{{ ($noscript).RelPermalink }}" /></noscript>
-	<!--{{ else }}
+	{{ else }}
 	{{ $noscript := resources.Get "sass/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "css/noscript.css" "enableSourceMap" false) }}
 	<noscript><link rel="stylesheet" href="{{ ($noscript | minify).RelPermalink }}" /></noscript>
-	{{end}}-->
+	{{end}}
 
 	<!-- FontAwesome CSS -->
 	{{ range .Site.Params.asset.fontawesome_css -}}
