@@ -10,7 +10,7 @@ relativeURLs = "true"
 canonifyURLs = "true"
 
 # Local
-baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures/'
+baseURL = 'samira-the-rogue-gnome.github.io/my-dnd-adventures/my-dnd-adventures'
 publishDir = "public"
 themesDir = "themes"
 theme = 'hugo-story'
