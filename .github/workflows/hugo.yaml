@@ -65,6 +65,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
+          theme: hugo-story
 
   # Deployment job
   deploy:
