@@ -15,7 +15,6 @@
 	{{ else }}
 	
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
-	<p>{{ ($style | minify).RelPermalink }}</p>
 	<link rel="stylesheet" href="{{ ($style | minify).RelPermalink }}">
 	{{ end }}
 	{{ if hugo.IsServer }}
