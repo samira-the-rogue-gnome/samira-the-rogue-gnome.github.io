@@ -6,8 +6,8 @@
 ## Publish
 ## -----------------------------------------------
 
-relativeURLs = "true"
-canonifyURLs = "true"
+relativeURLs = true
+canonifyURLs = true
 
 # Local
 baseURL = 'samira-the-rogue-gnome.github.io'
